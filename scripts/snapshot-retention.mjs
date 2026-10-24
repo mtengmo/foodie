@@ -8,7 +8,7 @@ function strictlyInside(root,path){const rel=relative(root,path);return rel!==''
 export async function pruneSnapshots(dataDirectory,currentSnapshot,keep=2){
   if(!snapshotName.test(currentSnapshot)||!Number.isInteger(keep)||keep<2)throw Error('Invalid snapshot retention');
   const root=await realpath(resolve(dataDirectory));
-  try{const published=JSON.parse(await readFile(resolve(root,'manifest.json'),'utf8'));if(published.snapshotId!==currentSnapshot||published.indexPath!=='data/'+currentSnapshot+'/index.json'||published.dictionaryPath!=='data/'+currentSnapshot+'/nutrients.json')throw Error('Published snapshot identity mismatch');}catch(error){if(error.code!=='ENOENT')throw error;}
+  try{const published=JSON.parse(await readFile(resolve(root,'manifest.json'),'utf8'));if(published.snapshotId!==currentSnapshot||published.indexPath!=='data/'+currentSnapshot+'/index.json'||published.dictionaryPath!=='data/'+currentSnapshot+'/nutrients.json'||published.discoveryPath&&published.discoveryPath!=='data/'+currentSnapshot+'/discovery.json')throw Error('Published snapshot identity mismatch');}catch(error){if(error.code!=='ENOENT')throw error;}
   const complete=[];
   for(const entry of await readdir(root,{withFileTypes:true})){
     if(!entry.isDirectory()||entry.isSymbolicLink()||!snapshotName.test(entry.name))continue;
@@ -16,10 +16,11 @@ export async function pruneSnapshots(dataDirectory,currentSnapshot,keep=2){
     if(!strictlyInside(root,target)||target!==resolve(root,entry.name))continue;
     try{
       const manifest=JSON.parse(await readFile(resolve(target,'snapshot.json'),'utf8'));
-      if(manifest.schemaVersion!==1||manifest.snapshotId!==entry.name||manifest.indexPath!==`data/${entry.name}/index.json`||manifest.dictionaryPath!==`data/${entry.name}/nutrients.json`)continue;
+      if(manifest.schemaVersion!==1||manifest.snapshotId!==entry.name||manifest.indexPath!==`data/${entry.name}/index.json`||manifest.dictionaryPath!==`data/${entry.name}/nutrients.json`||manifest.discoveryPath&&manifest.discoveryPath!==`data/${entry.name}/discovery.json`)continue;
       const index=await readFile(resolve(target,'index.json'),'utf8');
       const dictionary=await readFile(resolve(target,'nutrients.json'),'utf8');
       if(hash(index)!==manifest.checksums?.index||hash(dictionary)!==manifest.checksums?.dictionary)continue;
+      if(manifest.discoveryPath&&hash(await readFile(resolve(target,'discovery.json'),'utf8'))!==manifest.checksums?.discovery)continue;
       complete.push({name:entry.name,target});
     }catch{/* Unvalidated or unrelated folders are never deletion candidates. */}
   }

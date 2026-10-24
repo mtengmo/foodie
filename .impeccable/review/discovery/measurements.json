@@ -1,0 +1,71 @@
+{
+  "capturedAt": "2026-10-24T14:36:33.399Z",
+  "browser": "156.0.8078.4",
+  "errors": [],
+  "captures": [
+    {
+      "name": "explorer-desktop",
+      "overflow": false,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "name": "explorer-mobile",
+      "overflow": false,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "broccoli-mobile",
+      "overflow": false,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "starter-mobile",
+      "overflow": false,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "starter-desktop",
+      "overflow": false,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "name": "saved-desktop",
+      "overflow": false,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "name": "explorer-english-dark-320",
+      "overflow": false,
+      "viewport": {
+        "width": 320,
+        "height": 740
+      }
+    },
+    {
+      "name": "starter-english-dark-320",
+      "overflow": false,
+      "viewport": {
+        "width": 320,
+        "height": 740
+      }
+    }
+  ]
+}

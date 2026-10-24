@@ -2,7 +2,14 @@
 
 A bilingual Swedish/English food explorer and device-local recipe calculator, built with React, TypeScript and Vite. Nutrition comes from the Swedish Food Agency (Livsmedelsverket), attributed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Foodie normalizes and scales the source records; it does not model cooking losses.
 
+Food details explain protein/fibre thresholds. The nutrient explorer ranks up to 100 foods for ten nutrients per 100 g or per 100 kcal. Six bilingual starter recipes can be previewed and copied into the local recipe library with instructions. See the [discovery feature plan and remaining work](docs/NUTRIENT-DISCOVERY-PLAN.md).
+
+## Project documentation
+
+Agents should start with [AGENTS.md](AGENTS.md), then the [implemented architecture](docs/ARCHITECTURE.md) and [development guide](docs/DEVELOPMENT.md). [PRODUCT.md](PRODUCT.md) records product requirements; [DESIGN.md](DESIGN.md) records the visual system. [API research](docs/API-RESEARCH.md) and [release verification](docs/VERIFICATION.md) supply dated evidence. The [original plan](PLAN.md) and [build handoff](docs/BUILD-HANDOFF.md) are delivery history, not a current task backlog.
+
 ## Run
+
 
 ```sh
 npm ci

@@ -1,5 +1,7 @@
 # Sol and Luna build handoff
 
+**Historical initial-build reference.** The app is implemented. For new work, start with [AGENTS.md](../AGENTS.md), [ARCHITECTURE.md](ARCHITECTURE.md) and [DEVELOPMENT.md](DEVELOPMENT.md). The task queue and copyable build prompts below record the original delivery sequence; do not rerun them as outstanding work or assume the proposed folder layout exists.
+
 Read PRODUCT.md, PLAN.md and docs/API-RESEARCH.md before implementation. The user authorized building both stages with Sol and Luna, and selected Nordic Cookbook on the design board. This task allocation is being executed. Use the approved plan and any later user corrections as authority; consult the final verification report for completed work.
 
 Implementation status: S01–S08 and L01–L05 are complete. The user additionally requested deployment-version updates, implemented with guarded explicit reload and Settings controls. See VERIFICATION.md for checks and scope; GitHub Actions performs the full release suite before deployment.
@@ -67,7 +69,7 @@ Use clearly labelled synthetic fixtures for arithmetic; recorded upstream fixtur
 - End-to-end: search → detail → 150 g → language/theme change → reload → back; later create recipe → save → reload → export → import as copy.
 - GitHub Pages: non-root base URL, pasted hash deep link, asset/data paths, reload, unavailable food, stale-tab recovery; no private key in built JS.
 
-Before each release, run typecheck, lint, relevant domain/component tests, production build, and targeted Playwright flows. Inspect mobile and desktop together, fix material issues in a batch, and confirm once. Record results and any gaps in the handoff; do not claim success from a build alone.
+For current checks and commands, use DEVELOPMENT.md. The implementation provides typecheck, unit/data validation, production build and Playwright scripts; no lint script is currently configured. Record results and any gaps; do not claim success from a build alone.
 
 ## Copyable prompts
 
