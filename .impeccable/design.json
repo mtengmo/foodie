@@ -490,6 +490,10 @@
       {
         "name": "narrow-mobile",
         "value": "390px"
+      },
+      {
+        "name": "minimum-width-navigation",
+        "value": "360px"
       }
     ]
   },

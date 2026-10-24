@@ -88,7 +88,8 @@ test('phone food and recipe screens remain usable without horizontal overflow', 
   await expect(page.getByRole('button', { name: 'Lägg till ingrediens', exact: true })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.setViewportSize({ width: 320, height: 740 });
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.evaluate(() => document.fonts.ready);
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
 test('lookup works when device persistence is denied', async ({ page }) => {

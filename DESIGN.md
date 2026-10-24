@@ -146,7 +146,7 @@ Paper is the page canvas, surface is the raised reading panel, and surface-2 is 
 
 ## Typography
 
-Fraunces Variable is self-hosted through `@fontsource-variable/fraunces`, with Georgia and serif fallbacks. The body uses the platform system sans stack. There is no separate mono font.
+Fraunces Variable is self-hosted through `@fontsource-variable/fraunces`, with Georgia and serif fallbacks; its bundled licence ships at `public/Fraunces-OFL.txt`. The body uses the platform system sans stack. There is no separate mono font.
 
 Display is the page heading; headline and title cover panel headings and compact empty-state titles. Selected-food headings use a fluid size (`clamp(1.7rem, 2.6vw, 2.4rem)`). Labels use uppercase only for section dividers. Body copy retains normal case. Numeric quantities use tabular figures, locale formatting and visible units.
 
@@ -156,7 +156,7 @@ Display is the page heading; headline and title cover panel headings and compact
 
 The page is centred with a maximum width of 1440px, fluid horizontal padding and generous bottom space. Desktop food lookup uses unequal columns (`minmax(300px, .88fr)` and `minmax(0, 1.35fr)`) separated by 42px. The search column sticks below the header. Recipe layout uses a narrower list beside a wider editor. Supporting copy is limited to roughly 60 characters per line.
 
-At 900px the food columns and gap tighten. At 680px, the header shortens, search and detail become separate views with a Back link, and recipes become one column. At 390px nutrient rows and recipe quantity fields stack. The update banner stacks at 520px. The supported minimum viewport is 320px. Use min-width:0 and wrapping for long bilingual labels rather than clipping content.
+At 900px the food columns and gap tighten. At 680px, the header shortens, search and detail become separate views with a Back link, and recipes become one column. At 390px nutrient rows and recipe quantity fields stack. At 360px the brand and full-width navigation stack into two rows, with evenly spaced 44px links and a minimum header height of 104px; widths of 390px and above retain the single-row header. The update banner stacks at 520px. The supported minimum viewport is 320px. Use min-width:0 and wrapping for long bilingual labels rather than clipping content.
 
 ## Elevation & Depth
 
