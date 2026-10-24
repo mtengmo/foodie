@@ -17,3 +17,5 @@ One correction batch added preview heading focus/scroll, early recipe actions an
 - The mechanical detector ran once. Its output contained only advisory documented-system drift (mainly existing small typography steps, radius/shadow values, plus compact navigation/highlight text). No new palette, font family or visual-world replacement was introduced.
 
 This is local verification evidence. The GitHub Actions run and live deployment are checked separately after push.
+
+A subsequent routing check found that the saved-library jump must not use a fragment anchor with the hash router. It now uses a button that scrolls/focuses the heading without changing `#/recipes`. Both browser engines passed the extended recipe-copy scenario, and the reviewer reconfirmed **ship** for all three scoped findings against refreshed recipe evidence. The documentation was rechecked; design tokens and component conventions remain unchanged.

@@ -67,6 +67,9 @@ test('starter recipe preview saves instructions and nutrient snapshot for reload
   await page.getByRole('button', { name: 'Visa recept' }).first().click();
   await page.getByRole('button', { name: 'Spara en kopia' }).click();
   await expect(page.locator('.recipe-item')).toHaveCount(2);
+  await page.getByRole('button', { name: 'Sparade recept', exact: true }).click();
+  await expect.poll(() => page.evaluate(() => location.hash)).toBe('#/recipes');
+  await expect.poll(() => page.evaluate(() => (document.activeElement as HTMLElement)?.textContent === 'Sparade recept')).toBe(true);
   await page.reload();
   await expect(page.getByRole('heading', { name: 'Gör så här' })).toBeVisible();
   const download = page.waitForEvent('download');
