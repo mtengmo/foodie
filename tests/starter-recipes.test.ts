@@ -21,7 +21,7 @@ function useSnapshot(){
 describe('starter recipe catalogue',()=>{
   it('maps every bilingual recipe to actual edible-state records and produces complete macro estimates',async()=>{
     useSnapshot();
-    expect(starterRecipes).toHaveLength(6);
+    expect(starterRecipes).toHaveLength(12);
     expect(new Set(starterRecipes.map(t=>t.id)).size).toBe(starterRecipes.length);
     for(const template of starterRecipes){
       for(const locale of ['sv','en'] as const){
@@ -65,5 +65,26 @@ describe('starter recipe catalogue',()=>{
     expect(()=>validateRecipe({...recipe,instructions:['x'.repeat(5001)]})).toThrow('instructions');
     expect(()=>validateRecipe({...recipe,template:{id:'x',revision:0,locale:'sv'}})).toThrow('template');
     expect(()=>validateRecipe({...recipe,template:{id:'x',revision:1,locale:'de'}})).toThrow('template');
+  });
+  it('preserves imported recipe attribution and licence in copies and JSON backups',async()=>{
+    useSnapshot();
+    const imported=starterRecipes.filter(t=>t.license==='CC-BY-SA-4.0');
+    expect(imported).toHaveLength(3);
+    for(const template of imported){
+      for(const locale of ['sv','en'] as const){
+        const recipe=await createStarterRecipe(template,locale);
+        expect(recipe.template).toMatchObject({license:'CC-BY-SA-4.0',source:{url:template.source!.url,authors:'Wikibooks contributors',changes:template.source!.changes[locale]}});
+        expect(parseRecipeImport(exportRecipes([recipe]))[0].template).toEqual(recipe.template);
+        expect(()=>validateRecipe({...recipe,template:{...recipe.template!,source:undefined}})).toThrow('Missing recipe source');
+        expect(()=>validateRecipe({...recipe,template:{...recipe.template!,source:{...recipe.template!.source!,url:'javascript:alert(1)'}}})).toThrow('source URL');
+      }
+    }
+  });
+  it('includes the requested meals with explicit edible-state ingredient weights',()=>{
+    const stroganoff=starterRecipes.find(t=>t.id==='korvstroganoff-rice')!;
+    expect(stroganoff.ingredients).toEqual(expect.arrayContaining([expect.objectContaining({foodId:1487,grams:500}),expect.objectContaining({foodId:2481,grams:240})]));
+    const steak=starterRecipes.find(t=>t.id==='entrecote-sweet-potato')!;
+    expect(steak.ingredients).toEqual(expect.arrayContaining([expect.objectContaining({foodId:960,grams:350}),expect.objectContaining({foodId:3765,grams:500})]));
+    expect(starterRecipes.some(t=>t.id==='roasted-sweet-potato')).toBe(true);
   });
 });

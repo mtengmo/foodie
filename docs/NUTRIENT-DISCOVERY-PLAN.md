@@ -1,6 +1,6 @@
 # Nutrient discovery and starter recipes
 
-Status: implementation authorized 2026-10-24. Protein/fibre assessments, ten-nutrient rankings and six starter recipes are implemented in the current working change. Vitamin/mineral badges, category filters, portion rankings and recipe badges remain future work. Current contracts are documented in [ARCHITECTURE.md](ARCHITECTURE.md); the sections below preserve the design rationale and future constraints.
+Status: implementation authorized 2026-10-24. Protein/fibre assessments and ten-nutrient rankings are implemented. The catalogue has expanded to twelve starter recipes, including a [three-recipe Wikibooks pilot](RECIPE-SOURCES.md). Vitamin/mineral badges, category filters, portion rankings and recipe badges remain future work. Current contracts are documented in [ARCHITECTURE.md](ARCHITECTURE.md); the sections below preserve the design rationale and future constraints.
 
 ## Product direction
 

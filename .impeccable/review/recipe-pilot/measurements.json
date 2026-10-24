@@ -1,0 +1,26 @@
+[
+  {
+    "name": "korvstroganoff-desktop",
+    "overflow": false,
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    }
+  },
+  {
+    "name": "greek-salad-mobile",
+    "overflow": false,
+    "viewport": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  {
+    "name": "hummus-english-dark-320",
+    "overflow": false,
+    "viewport": {
+      "width": 320,
+      "height": 740
+    }
+  }
+]

@@ -30,6 +30,7 @@ Foodie lets users search Livsmedelsverket's food data and view nutrient informat
 - External recipe APIs are an investigation for a later stage, not a dependency of food lookup or manual recipe creation.
 - Explain protein and fibre thresholds on food details and offer top-food rankings for selected nutrients, with explicit comparison basis and missing-data coverage.
 - Offer original Swedish/English starter recipes that users can preview and save as independent local copies with instructions.
+- Include a small curated selection of openly licensed recipes, retaining source credit, adaptation notices and recipe licences in saved copies and backups.
 
 ## Brand Commitments
 

@@ -6,5 +6,7 @@ export interface NutrientValue {key:string;value:number|null;status:'known'|'unk
 export interface FoodDetail extends FoodSummary {snapshotId:string;nutrients:NutrientValue[];sourceUrl:string}
 export interface DatasetManifest {schemaVersion:1;snapshotId:string;fetchedAt:string;sourceUrl:string;license:string;counts:Record<Locale,number>;indexPath:string;dictionaryPath:string;discoveryPath:string;checksums:Record<string,string>}
 export interface Ingredient {id:string;foodId:number;grams:number;food:FoodDetail}
-export interface Recipe {schemaVersion:1;id:string;title:string;servings:number;ingredients:Ingredient[];createdAt:string;updatedAt:string;finalWeight?:number;snapshotId:string;instructions?:string[];template?:{id:string;revision:number;locale:Locale}}
+export type RecipeLicense = 'CC0-1.0'|'CC-BY-SA-4.0';
+export interface RecipeSource {title:string;url:string;authors:string;changes:string}
+export interface Recipe {schemaVersion:1;id:string;title:string;servings:number;ingredients:Ingredient[];createdAt:string;updatedAt:string;finalWeight?:number;snapshotId:string;instructions?:string[];template?:{id:string;revision:number;locale:Locale;license?:RecipeLicense;source?:RecipeSource}}
 export interface CalculatedNutrient {key:string;value:number|null;complete:boolean;knownIngredients:number;totalIngredients:number}

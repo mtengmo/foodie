@@ -2,7 +2,7 @@
 
 A bilingual Swedish/English food explorer and device-local recipe calculator, built with React, TypeScript and Vite. Nutrition comes from the Swedish Food Agency (Livsmedelsverket), attributed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Foodie normalizes and scales the source records; it does not model cooking losses.
 
-Food details explain protein/fibre thresholds. The nutrient explorer ranks up to 100 foods for ten nutrients per 100 g or per 100 kcal. Six bilingual starter recipes can be previewed and copied into the local recipe library with instructions. See the [discovery feature plan and remaining work](docs/NUTRIENT-DISCOVERY-PLAN.md).
+Food details explain protein/fibre thresholds. The nutrient explorer ranks up to 100 foods for ten nutrients per 100 g or per 100 kcal. Twelve bilingual starter recipes can be previewed and copied into the local recipe library with instructions, including korvstroganoff, entrecôte with sweet potato, and a [curated Wikibooks pilot](docs/RECIPE-SOURCES.md) with retained source licences. See the [discovery feature plan and remaining work](docs/NUTRIENT-DISCOVERY-PLAN.md).
 
 ## Project documentation
 
