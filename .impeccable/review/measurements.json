@@ -1,0 +1,9 @@
+{
+  "dataset": "2026-10-24",
+  "foods": 2606,
+  "indexGzipBytes": 83382,
+  "errors": [],
+  "overflow": false,
+  "capturedAt": "2026-10-24T14:00:26.587Z",
+  "browser": "156.0.8078.4"
+}

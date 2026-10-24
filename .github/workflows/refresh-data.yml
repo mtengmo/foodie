@@ -1,0 +1,37 @@
+name: Refresh food snapshot
+on:
+  workflow_dispatch:
+    inputs:
+      full:
+        description: Re-fetch unchanged foods too
+        type: boolean
+        default: true
+  schedule:
+    - cron: '25 5 2 * *'
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache@v4
+        with:
+          path: .data-cache
+          key: food-data-${{ github.run_id }}
+          restore-keys: food-data-
+      - run: node scripts/sync-data.mjs ${{ (github.event_name == 'schedule' || inputs.full) && '--full' || '' }}
+      - run: npm run data:validate
+      - run: npm test
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/refresh
+          title: Refresh Livsmedelsverket food snapshot
+          commit-message: Refresh complete bilingual food snapshot
+          body: Complete bilingual snapshot fetched and validated. Review dataset changes before merging.

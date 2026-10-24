@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-24T13:53:58.540795+00:00",
+  "title": "Design System: Foodie",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.052 43.6)",
+          "oklch(26% 0.052 43.6)",
+          "oklch(38% 0.052 43.6)",
+          "oklch(49% 0.052 43.6)",
+          "oklch(61% 0.052 43.6)",
+          "oklch(72% 0.052 43.6)",
+          "oklch(84% 0.052 43.6)",
+          "oklch(95% 0.052 43.6)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.080 42.9)",
+          "oklch(26% 0.080 42.9)",
+          "oklch(38% 0.080 42.9)",
+          "oklch(49% 0.080 42.9)",
+          "oklch(61% 0.080 42.9)",
+          "oklch(72% 0.080 42.9)",
+          "oklch(84% 0.080 42.9)",
+          "oklch(95% 0.080 42.9)"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Surface 2",
+        "tonalRamp": [
+          "oklch(15% 0.038 41.3)",
+          "oklch(26% 0.038 41.3)",
+          "oklch(38% 0.038 41.3)",
+          "oklch(49% 0.038 41.3)",
+          "oklch(61% 0.038 41.3)",
+          "oklch(72% 0.038 41.3)",
+          "oklch(84% 0.038 41.3)",
+          "oklch(95% 0.038 41.3)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.019 148.4)",
+          "oklch(26% 0.019 148.4)",
+          "oklch(38% 0.019 148.4)",
+          "oklch(49% 0.019 148.4)",
+          "oklch(61% 0.019 148.4)",
+          "oklch(72% 0.019 148.4)",
+          "oklch(84% 0.019 148.4)",
+          "oklch(95% 0.019 148.4)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.007 132.9)",
+          "oklch(26% 0.007 132.9)",
+          "oklch(38% 0.007 132.9)",
+          "oklch(49% 0.007 132.9)",
+          "oklch(61% 0.007 132.9)",
+          "oklch(72% 0.007 132.9)",
+          "oklch(84% 0.007 132.9)",
+          "oklch(95% 0.007 132.9)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.016 51.4)",
+          "oklch(26% 0.016 51.4)",
+          "oklch(38% 0.016 51.4)",
+          "oklch(49% 0.016 51.4)",
+          "oklch(61% 0.016 51.4)",
+          "oklch(72% 0.016 51.4)",
+          "oklch(84% 0.016 51.4)",
+          "oklch(95% 0.016 51.4)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Green",
+        "tonalRamp": [
+          "oklch(15% 0.025 146.7)",
+          "oklch(26% 0.025 146.7)",
+          "oklch(38% 0.025 146.7)",
+          "oklch(49% 0.025 146.7)",
+          "oklch(61% 0.025 146.7)",
+          "oklch(72% 0.025 146.7)",
+          "oklch(84% 0.025 146.7)",
+          "oklch(95% 0.025 146.7)"
+        ]
+      },
+      "green-soft": {
+        "role": "secondary",
+        "displayName": "Green Soft",
+        "tonalRamp": [
+          "oklch(15% 0.023 105.0)",
+          "oklch(26% 0.023 105.0)",
+          "oklch(38% 0.023 105.0)",
+          "oklch(49% 0.023 105.0)",
+          "oklch(61% 0.023 105.0)",
+          "oklch(72% 0.023 105.0)",
+          "oklch(84% 0.023 105.0)",
+          "oklch(95% 0.023 105.0)"
+        ]
+      },
+      "berry": {
+        "role": "primary",
+        "displayName": "Berry",
+        "tonalRamp": [
+          "oklch(15% 0.038 341.0)",
+          "oklch(26% 0.038 341.0)",
+          "oklch(38% 0.038 341.0)",
+          "oklch(49% 0.038 341.0)",
+          "oklch(61% 0.038 341.0)",
+          "oklch(72% 0.038 341.0)",
+          "oklch(84% 0.038 341.0)",
+          "oklch(95% 0.038 341.0)"
+        ]
+      },
+      "berry-soft": {
+        "role": "primary",
+        "displayName": "Berry Soft",
+        "tonalRamp": [
+          "oklch(15% 0.040 341.2)",
+          "oklch(26% 0.040 341.2)",
+          "oklch(38% 0.040 341.2)",
+          "oklch(49% 0.040 341.2)",
+          "oklch(61% 0.040 341.2)",
+          "oklch(72% 0.040 341.2)",
+          "oklch(84% 0.040 341.2)",
+          "oklch(95% 0.040 341.2)"
+        ]
+      },
+      "accent-text": {
+        "role": "primary",
+        "displayName": "Accent Text",
+        "tonalRamp": [
+          "oklch(15% 0.047 339.7)",
+          "oklch(26% 0.047 339.7)",
+          "oklch(38% 0.047 339.7)",
+          "oklch(49% 0.047 339.7)",
+          "oklch(61% 0.047 339.7)",
+          "oklch(72% 0.047 339.7)",
+          "oklch(84% 0.047 339.7)",
+          "oklch(95% 0.047 339.7)"
+        ]
+      },
+      "ochre": {
+        "role": "tertiary",
+        "displayName": "Ochre",
+        "tonalRamp": [
+          "oklch(15% 0.069 34.5)",
+          "oklch(26% 0.069 34.5)",
+          "oklch(38% 0.069 34.5)",
+          "oklch(49% 0.069 34.5)",
+          "oklch(61% 0.069 34.5)",
+          "oklch(72% 0.069 34.5)",
+          "oklch(84% 0.069 34.5)",
+          "oklch(95% 0.069 34.5)"
+        ]
+      },
+      "ochre-soft": {
+        "role": "tertiary",
+        "displayName": "Ochre Soft",
+        "tonalRamp": [
+          "oklch(15% 0.055 39.3)",
+          "oklch(26% 0.055 39.3)",
+          "oklch(38% 0.055 39.3)",
+          "oklch(49% 0.055 39.3)",
+          "oklch(61% 0.055 39.3)",
+          "oklch(72% 0.055 39.3)",
+          "oklch(84% 0.055 39.3)",
+          "oklch(95% 0.055 39.3)"
+        ]
+      },
+      "violet": {
+        "role": "tertiary",
+        "displayName": "Violet",
+        "tonalRamp": [
+          "oklch(15% 0.018 255.0)",
+          "oklch(26% 0.018 255.0)",
+          "oklch(38% 0.018 255.0)",
+          "oklch(49% 0.018 255.0)",
+          "oklch(61% 0.018 255.0)",
+          "oklch(72% 0.018 255.0)",
+          "oklch(84% 0.018 255.0)",
+          "oklch(95% 0.018 255.0)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.000 0.0)",
+          "oklch(26% 0.000 0.0)",
+          "oklch(38% 0.000 0.0)",
+          "oklch(49% 0.000 0.0)",
+          "oklch(61% 0.000 0.0)",
+          "oklch(72% 0.000 0.0)",
+          "oklch(84% 0.000 0.0)",
+          "oklch(95% 0.000 0.0)"
+        ]
+      },
+      "dark-paper": {
+        "role": "neutral",
+        "displayName": "Dark Paper",
+        "tonalRamp": [
+          "oklch(15% 0.015 147.3)",
+          "oklch(26% 0.015 147.3)",
+          "oklch(38% 0.015 147.3)",
+          "oklch(49% 0.015 147.3)",
+          "oklch(61% 0.015 147.3)",
+          "oklch(72% 0.015 147.3)",
+          "oklch(84% 0.015 147.3)",
+          "oklch(95% 0.015 147.3)"
+        ]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "Dark Surface",
+        "tonalRamp": [
+          "oklch(15% 0.014 143.1)",
+          "oklch(26% 0.014 143.1)",
+          "oklch(38% 0.014 143.1)",
+          "oklch(49% 0.014 143.1)",
+          "oklch(61% 0.014 143.1)",
+          "oklch(72% 0.014 143.1)",
+          "oklch(84% 0.014 143.1)",
+          "oklch(95% 0.014 143.1)"
+        ]
+      },
+      "dark-surface-2": {
+        "role": "neutral",
+        "displayName": "Dark Surface 2",
+        "tonalRamp": [
+          "oklch(15% 0.012 141.4)",
+          "oklch(26% 0.012 141.4)",
+          "oklch(38% 0.012 141.4)",
+          "oklch(49% 0.012 141.4)",
+          "oklch(61% 0.012 141.4)",
+          "oklch(72% 0.012 141.4)",
+          "oklch(84% 0.012 141.4)",
+          "oklch(95% 0.012 141.4)"
+        ]
+      },
+      "dark-ink": {
+        "role": "neutral",
+        "displayName": "Dark Ink",
+        "tonalRamp": [
+          "oklch(15% 0.032 47.1)",
+          "oklch(26% 0.032 47.1)",
+          "oklch(38% 0.032 47.1)",
+          "oklch(49% 0.032 47.1)",
+          "oklch(61% 0.032 47.1)",
+          "oklch(72% 0.032 47.1)",
+          "oklch(84% 0.032 47.1)",
+          "oklch(95% 0.032 47.1)"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Dark Muted",
+        "tonalRamp": [
+          "oklch(15% 0.010 100.0)",
+          "oklch(26% 0.010 100.0)",
+          "oklch(38% 0.010 100.0)",
+          "oklch(49% 0.010 100.0)",
+          "oklch(61% 0.010 100.0)",
+          "oklch(72% 0.010 100.0)",
+          "oklch(84% 0.010 100.0)",
+          "oklch(95% 0.010 100.0)"
+        ]
+      },
+      "dark-line": {
+        "role": "neutral",
+        "displayName": "Dark Line",
+        "tonalRamp": [
+          "oklch(15% 0.009 137.1)",
+          "oklch(26% 0.009 137.1)",
+          "oklch(38% 0.009 137.1)",
+          "oklch(49% 0.009 137.1)",
+          "oklch(61% 0.009 137.1)",
+          "oklch(72% 0.009 137.1)",
+          "oklch(84% 0.009 137.1)",
+          "oklch(95% 0.009 137.1)"
+        ]
+      },
+      "dark-green": {
+        "role": "secondary",
+        "displayName": "Dark Green",
+        "tonalRamp": [
+          "oklch(15% 0.021 130.0)",
+          "oklch(26% 0.021 130.0)",
+          "oklch(38% 0.021 130.0)",
+          "oklch(49% 0.021 130.0)",
+          "oklch(61% 0.021 130.0)",
+          "oklch(72% 0.021 130.0)",
+          "oklch(84% 0.021 130.0)",
+          "oklch(95% 0.021 130.0)"
+        ]
+      },
+      "dark-green-soft": {
+        "role": "secondary",
+        "displayName": "Dark Green Soft",
+        "tonalRamp": [
+          "oklch(15% 0.015 136.7)",
+          "oklch(26% 0.015 136.7)",
+          "oklch(38% 0.015 136.7)",
+          "oklch(49% 0.015 136.7)",
+          "oklch(61% 0.015 136.7)",
+          "oklch(72% 0.015 136.7)",
+          "oklch(84% 0.015 136.7)",
+          "oklch(95% 0.015 136.7)"
+        ]
+      },
+      "dark-berry-soft": {
+        "role": "primary",
+        "displayName": "Dark Berry Soft",
+        "tonalRamp": [
+          "oklch(15% 0.016 333.0)",
+          "oklch(26% 0.016 333.0)",
+          "oklch(38% 0.016 333.0)",
+          "oklch(49% 0.016 333.0)",
+          "oklch(61% 0.016 333.0)",
+          "oklch(72% 0.016 333.0)",
+          "oklch(84% 0.016 333.0)",
+          "oklch(95% 0.016 333.0)"
+        ]
+      },
+      "dark-accent-text": {
+        "role": "primary",
+        "displayName": "Dark Accent Text",
+        "tonalRamp": [
+          "oklch(15% 0.067 345.0)",
+          "oklch(26% 0.067 345.0)",
+          "oklch(38% 0.067 345.0)",
+          "oklch(49% 0.067 345.0)",
+          "oklch(61% 0.067 345.0)",
+          "oklch(72% 0.067 345.0)",
+          "oklch(84% 0.067 345.0)",
+          "oklch(95% 0.067 345.0)"
+        ]
+      },
+      "dark-ochre": {
+        "role": "tertiary",
+        "displayName": "Dark Ochre",
+        "tonalRamp": [
+          "oklch(15% 0.073 37.4)",
+          "oklch(26% 0.073 37.4)",
+          "oklch(38% 0.073 37.4)",
+          "oklch(49% 0.073 37.4)",
+          "oklch(61% 0.073 37.4)",
+          "oklch(72% 0.073 37.4)",
+          "oklch(84% 0.073 37.4)",
+          "oklch(95% 0.073 37.4)"
+        ]
+      },
+      "dark-ochre-soft": {
+        "role": "tertiary",
+        "displayName": "Dark Ochre Soft",
+        "tonalRamp": [
+          "oklch(15% 0.027 36.8)",
+          "oklch(26% 0.027 36.8)",
+          "oklch(38% 0.027 36.8)",
+          "oklch(49% 0.027 36.8)",
+          "oklch(61% 0.027 36.8)",
+          "oklch(72% 0.027 36.8)",
+          "oklch(84% 0.027 36.8)",
+          "oklch(95% 0.027 36.8)"
+        ]
+      },
+      "dark-violet": {
+        "role": "tertiary",
+        "displayName": "Dark Violet",
+        "tonalRamp": [
+          "oklch(15% 0.041 254.6)",
+          "oklch(26% 0.041 254.6)",
+          "oklch(38% 0.041 254.6)",
+          "oklch(49% 0.041 254.6)",
+          "oklch(61% 0.041 254.6)",
+          "oklch(72% 0.041 254.6)",
+          "oklch(84% 0.041 254.6)",
+          "oklch(95% 0.041 254.6)"
+        ]
+      },
+      "forest-accent-text": {
+        "role": "primary",
+        "displayName": "Forest Accent Text",
+        "tonalRamp": [
+          "oklch(15% 0.035 144.3)",
+          "oklch(26% 0.035 144.3)",
+          "oklch(38% 0.035 144.3)",
+          "oklch(49% 0.035 144.3)",
+          "oklch(61% 0.035 144.3)",
+          "oklch(72% 0.035 144.3)",
+          "oklch(84% 0.035 144.3)",
+          "oklch(95% 0.035 144.3)"
+        ]
+      },
+      "dark-forest-accent-text": {
+        "role": "primary",
+        "displayName": "Dark Forest Accent Text",
+        "tonalRamp": [
+          "oklch(15% 0.025 110.0)",
+          "oklch(26% 0.025 110.0)",
+          "oklch(38% 0.025 110.0)",
+          "oklch(49% 0.025 110.0)",
+          "oklch(61% 0.025 110.0)",
+          "oklch(72% 0.025 110.0)",
+          "oklch(84% 0.025 110.0)",
+          "oklch(95% 0.025 110.0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Editorial display",
+        "purpose": "Page headings; self-hosted Fraunces Variable."
+      },
+      "body": {
+        "displayName": "System sans",
+        "purpose": "Controls, prose and tabular numeric data."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel",
+        "value": "0 12px 34px rgba(46,55,43,.07)",
+        "purpose": "Search and reading panels in light mode."
+      },
+      {
+        "name": "panel-dark",
+        "value": "0 12px 34px rgba(0,0,0,.2)",
+        "purpose": "Dark theme panel override."
+      },
+      {
+        "name": "navigation",
+        "value": "0 4px 18px rgba(34,40,33,.12)",
+        "purpose": "Sticky topbar separation."
+      },
+      {
+        "name": "dialog",
+        "value": "0 24px 70px rgba(0,0,0,.25)",
+        "purpose": "Import dialog style."
+      }
+    ],
+    "motion": [
+      {
+        "name": "chart",
+        "value": "stroke-dasharray .4s ease, stroke-dashoffset .4s ease",
+        "purpose": "SVG macro segment changes."
+      },
+      {
+        "name": "spinner",
+        "value": "spin .75s linear infinite",
+        "purpose": "Loading and save status."
+      },
+      {
+        "name": "reduced-motion",
+        "value": ".01ms",
+        "purpose": "Animation and transition duration under prefers-reduced-motion; one animation iteration and automatic scrolling."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "680px"
+      },
+      {
+        "name": "update-banner-stack",
+        "value": "520px"
+      },
+      {
+        "name": "narrow-mobile",
+        "value": "390px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "description": "Standard recipe action.",
+      "html": "<button class=\"ds-primary\">Save recipe</button>",
+      "css": ".ds-primary{min-height:46px;padding:0 17px;border:1px solid transparent;border-radius:9px;background:var(--berry);color:var(--on-accent,#fff);font:700 15px ui-sans-serif,system-ui,sans-serif;cursor:pointer}.ds-primary:hover{filter:brightness(1.08)}.ds-primary:disabled{opacity:.55;cursor:not-allowed}.ds-primary:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "description": "Standard recipe action.",
+      "html": "<button class=\"ds-secondary\">Export recipes</button>",
+      "css": ".ds-secondary{min-height:46px;padding:0 17px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font:700 15px ui-sans-serif,system-ui,sans-serif;cursor:pointer}.ds-secondary:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}",
+      "refersTo": "button-secondary"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "description": "Standard recipe action.",
+      "html": "<button class=\"ds-danger\">Replace recipes</button>",
+      "css": ".ds-danger{min-height:46px;padding:0 17px;border:1px solid transparent;border-radius:9px;background:var(--berry-soft);color:var(--accent-text);font:700 15px ui-sans-serif,system-ui,sans-serif;cursor:pointer}.ds-danger:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}",
+      "refersTo": "button-danger"
+    },
+    {
+      "name": "Food Search",
+      "kind": "input",
+      "description": "Search field with a focus-within accent ring.",
+      "html": "<label class=\"ds-search\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input aria-label=\"Search foods\" placeholder=\"Search foods\" type=\"search\"/></label>",
+      "css": ".ds-search{height:58px;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:12px;display:flex;gap:12px;align-items:center;padding:0 16px;box-shadow:var(--shadow)}.ds-search input{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font:15px ui-sans-serif,system-ui,sans-serif}.ds-search input::placeholder{color:var(--muted);opacity:.82}.ds-search:focus-within{border-color:var(--berry);box-shadow:0 0 0 3px color-mix(in srgb,var(--berry) 17%,transparent)}",
+      "refersTo": "search"
+    },
+    {
+      "name": "Selected Choice",
+      "kind": "chip",
+      "description": "Pressed appearance or language choice.",
+      "html": "<button class=\"ds-choice\" aria-pressed=\"true\">English</button>",
+      "css": ".ds-choice{min-height:46px;padding:0 16px;border:1px solid var(--berry);border-radius:9px;background:var(--berry-soft);color:var(--accent-text);font:700 15px ui-sans-serif,system-ui,sans-serif;cursor:pointer}.ds-choice:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}",
+      "refersTo": "choice-active"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Sticky-header link treatment.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#foods\" aria-current=\"page\">Foods</a><a href=\"#recipes\">Recipes</a><a href=\"#settings\">Settings</a></nav>",
+      "css": ".ds-nav{display:flex;gap:8px;padding:12px;background:var(--berry);font:600 15px ui-sans-serif,system-ui,sans-serif}.ds-nav a{display:inline-flex;align-items:center;height:46px;padding:0 16px;border-radius:9px;text-decoration:none;color:rgba(255,255,255,.8)}.ds-nav a:hover,.ds-nav a[aria-current]{background:rgba(255,255,255,.15);color:#fff}.ds-nav a:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}"
+    },
+    {
+      "name": "Reading Panel",
+      "kind": "card",
+      "description": "Warm reading surface with aligned nutrient values.",
+      "html": "<section class=\"ds-panel\"><h2>Potato, boiled</h2><p>Nutrition per 100 g</p><dl><div><dt>Protein</dt><dd>1.8 g</dd></div></dl></section>",
+      "css": ".ds-panel{background:var(--surface);color:var(--ink);border-radius:16px;padding:clamp(22px,3vw,38px);box-shadow:var(--shadow);font:15px/1.5 ui-sans-serif,system-ui,sans-serif}.ds-panel h2{font:600 1.65rem/1.1 var(--display);letter-spacing:-.025em;margin:0 0 14px}.ds-panel p,.ds-panel dt{color:var(--muted)}.ds-panel dl div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:11px 0}.ds-panel dd{font-weight:600;font-variant-numeric:tabular-nums;margin:0}",
+      "refersTo": "panel"
+    }
+  ],
+  "narrative": {
+    "northStar": "Nordic Cookbook",
+    "overview": "Foodie pairs warm paper and editorial serif headings with compact, practical controls. Its colour comes from berry navigation, botanical selection surfaces and restrained ochre accents. Search, quantities and readable nutrition stay visually prominent.",
+    "keyCharacteristics": [
+      "Warm paper surfaces with botanical and berry accents.",
+      "Editorial headings paired with precise system sans text.",
+      "Quiet separators, spacious panels and compact controls.",
+      "Responsive layouts with explicit selected and keyboard focus states."
+    ],
+    "rules": [
+      {
+        "name": "The Theme Continuity Rule",
+        "body": "Use the existing CSS variables in new components. Dark mode changes neutrals, chart colours and accent text while retaining berry fills. Forest mode sets berry and berry-soft to the botanical pair and swaps green and green-soft to the berry pair. Dark forest explicitly uses dark-green-soft for berry-soft and dark-forest-accent-text for selected text. Preserve the actual cascade rather than inventing a parallel palette.",
+        "section": "colors"
+      },
+      {
+        "name": "The Readable Quantity Rule",
+        "body": "Keep nutrient values and their units together. Wrap long food and recipe names without squeezing quantity controls.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "**Do** build new surfaces from the existing theme variables.",
+      "**Do** pair chart colour with labels, units and visible selection.",
+      "**Do** preserve keyboard focus, bilingual wrapping and readable quantity fields.",
+      "**Do** keep update actions explicit and protect edits and pending saves."
+    ],
+    "donts": [
+      "**Don't** replace the editorial serif and system sans pairing with a new font system.",
+      "**Don't** use decorative imagery or repeated cards to compete with food data.",
+      "**Don't** infer zero from missing nutrition or describe the gram chart as energy share.",
+      "**Don't** communicate state with colour alone or hide the keyboard focus treatment."
+    ]
+  }
+}
